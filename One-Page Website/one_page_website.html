@@ -3,9 +3,10 @@
 	<head>
 		<title>The Mountain Travel Agency</title>
 		<meta charset="utf-8">
+        <link rel="stylesheet" href="./css/one_page_website.css">
 		<link rel="stylesheet" href="./css/shared.css">
 		<link rel="stylesheet" href="./css/animations.css">
-		<link rel="stylesheet" href="./css/one_page_website.css">
+        <script src="./JS/one_page_website.js" defer></script>
 	</head>
 	<body>
 	
@@ -148,6 +149,141 @@
 			</div>
 		</section>
 		<!-- The end of the PHOTO GALLERY div -->
+
+
+
+
+
+<!-- Images used to open the lightbox -->
+<div class="row">
+    <div class="column">
+      <img src="./images/Thumb/thumb1.jpeg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+    </div>
+    <div class="column">
+      <img src="./images/Thumb/thumb2.jpeg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+    </div>
+    <div class="column">
+      <img src="./images/Thumb/thumb3.jpeg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+    </div>
+    <div class="column">
+      <img src="./images/Thumb/thumb4.jpeg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+    </div>
+    <div class="column">
+        <img src="./images/Thumb/thumb5.jpeg" onclick="openModal();currentSlide(5)" class="hover-shadow">
+      </div>
+      <div class="column">
+        <img src="./images/Thumb/thumb6.jpeg" onclick="openModal();currentSlide(6)" class="hover-shadow">
+      </div>
+      <div class="column">
+        <img src="./images/Thumb/thumb7.jpeg" onclick="openModal();currentSlide(7)" class="hover-shadow">
+      </div>
+      <div class="column">
+        <img src="./images/Thumb/thumb8.jpeg" onclick="openModal();currentSlide(8)" class="hover-shadow">
+      </div>
+      <div class="column">
+        <img src="./images/Thumb/thumb9.jpeg" onclick="openModal();currentSlide(9)" class="hover-shadow">
+      </div>
+  </div>
+  
+  <!-- The Modal/Lightbox -->
+  <div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+  
+      <div class="mySlides">
+        <div class="numbertext">1 / 9</div>
+        <img src="./images/Thumb/thumbnail_1.jpg" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">2 / 9</div>
+        <img src="./images/Thumb/thumbnail_2.jpg" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">3 / 9</div>
+        <img src="./images/Thumb/thumbnail_3.jpg" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">4 / 9</div>
+        <img src="./images/Thumb/thumbnail_4.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">5 / 9</div>
+        <img src="./images/Thumb/thumbnail_5.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">6 / 9</div>
+        <img src="./images/Thumb/thumbnail_6.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">7 / 9</div>
+        <img src="./images/Thumb/thumbnail_7.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">8 / 9</div>
+        <img src="./images/Thumb/thumbnail_8.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">9 / 9</div>
+        <img src="./images/Thumb/thumbnail_9.jpg" style="width:100%">
+      </div>
+  
+      <!-- Next/previous controls -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+      <!-- Caption text -->
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+  
+      <!-- Thumbnail image controls -->
+      <div class="column">
+        <img class="demo" src="./images/Thumb/thumb1.jpeg" onclick="currentSlide(1)" alt="">
+      </div>
+  
+      <div class="column">
+        <img class="demo" src="./images/Thumb/thumb2.jpeg" onclick="currentSlide(2)" alt="">
+      </div>
+  
+      <div class="column">
+        <img class="demo" src="./images/Thumb/thumb3.jpeg" onclick="currentSlide(3)" alt="">
+      </div>
+  
+      <div class="column">
+        <img class="demo" src="./images/Thumb/thumb4.jpeg" onclick="currentSlide(4)" alt="">
+      </div>
+    
+      <div class="column">
+        <img class="demo" src="./images/Thumb/thumb5.jpeg" onclick="currentSlide(5)" alt="">
+      </div>
+      <div class="column">
+        <img class="demo" src="./images/Thumb/thumb6.jpeg" onclick="currentSlide(6)" alt="">
+      </div>
+      <div class="column">
+        <img class="demo" src="./images/Thumb/thumb7.jpeg" onclick="currentSlide(7)" alt="">
+      </div>
+      <div class="column">
+        <img class="demo" src="./images/Thumb/thumb8.jpeg" onclick="currentSlide(8)" alt="">
+      </div>
+      <div class="column">
+        <img class="demo" src="./images/Thumb/thumb9.jpeg" onclick="currentSlide(9)" alt="">
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
 		
 		<!-- The start of the RESERVATIONS div -->
 		<section id="contact">
@@ -189,9 +325,3 @@
 </html>
 	</body>
 </html>
-
-
-
-
-
-
